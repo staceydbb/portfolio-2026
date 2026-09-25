@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0a11" />
+    <meta name="description" content="Portfolio of Stacey D. Ballares, a full-stack developer and data analyst." />
+    <title>Stacey D. Ballares — Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="hover.css" />
+    <link rel="stylesheet" href="lanyard.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="photo.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="id-size.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="nav-wrap">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home">SDB<span>.</span></a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+        <div class="nav-links">
+          <a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch theme"><span class="theme-icon">☼</span><span class="theme-label">Light</span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-shell">
+        <div class="availability"><span></span> Available for opportunities</div>
+        <p class="eyebrow">STACEY D. BALLARES <i></i> FULL-STACK DEVELOPER &amp; DATA ANALYST</p>
+        <div class="hero-grid">
+          <div>
+            <h1>I build<br /><em>useful</em> systems<br />from data.</h1>
+            <p class="hero-copy">I create database-driven applications and analytics solutions that turn complex workflows into practical, user-friendly digital experiences.</p>
+            <div class="hero-actions"><a class="button primary" href="#work">View my work <b>↘</b></a><a class="button ghost" href="#contact">Let’s connect</a></div>
+          </div>
+          <aside class="lanyard-zone" aria-label="Interactive Stacey Ballares ID card">
+            <div class="lanyard" id="lanyard" tabindex="0">
+              <div class="lace"><span>SDB · FULL-STACK · DATA · SDB · FULL-STACK · DATA ·</span></div>
+              <div class="badge-clip"><i></i></div>
+              <article class="identity-card">
+                <div class="identity-top"><span>PROFILE / 01</span><span>MANILA, PH</span></div>
+                <div class="badge-photo"><img src="assets/stacey-id-photo.jpeg?v=3" alt="Portrait of Stacey D. Ballares" /></div>
+                <div class="badge-name"><strong>STACEY D. BALLARES</strong><span>FULL-STACK DEVELOPER<br />&amp; DATA ANALYST</span></div>
+                <div class="identity-bottom"><span>ID: SDB-2026</span><span>PORTFOLIO</span></div>
+              </article>
+            </div>
+            <p class="drag-note">drag the ID ↗</p>
+          </aside>
+        </div>
+        <div class="stack-line"><span>Laravel</span><span>React</span><span>PHP</span><span>Python</span><span>PostgreSQL</span><span>FastAPI</span></div>
+        <a class="scroll-cue" href="#about">Scroll to explore <span>↓</span></a>
+      </section>
+
+      <section id="about" class="about section-shell reveal">
+        <p class="eyebrow">01 / ABOUT ME</p>
+        <div class="about-layout"><h2>Stacey<br /><em>Ballares.</em></h2><div class="about-copy"><p>I’m a BS Information Technology student at the Polytechnic University of the Philippines, focused on full-stack development and data analytics.</p><p>I enjoy the part where code, data, and real people’s needs meet: designing reliable systems, organizing information, and making technical workflows feel simple to use.</p><div class="stat-row"><div><strong>04</strong><span>featured projects</span></div><div><strong>5× / 1×</strong><span>President’s Lister<br />Dean’s Lister</span></div><div><strong>2027</strong><span>expected graduation</span></div></div></div></div>
+      </section>
+
+      <section id="work" class="work section-shell reveal">
+        <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Projects with<br /><em>purpose.</em></h2></div><p>Built across full-stack web development, data analysis, research, and product planning.</p></div>
+        <div class="work-carousel" aria-label="Project gallery">
+          <div class="carousel-stage">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous project">←</button>
+            <div class="carousel-track">
+              <button class="carousel-slide" type="button" data-index="0" aria-label="Show LeaSense PH"><img src="assets/leasense.png" alt="LeaSense PH property management dashboard" /></button>
+              <button class="carousel-slide" type="button" data-index="1" aria-label="Show CLA.I.RE"><img src="assets/claire.png" alt="CLA.I.RE cervical cancer screening assistant interface" /></button>
+              <button class="carousel-slide" type="button" data-index="2" aria-label="Show MembrEase"><img src="assets/membrease.png" alt="MembrEase PhilHealth companion login screen" /></button>
+              <button class="carousel-slide" type="button" data-index="3" aria-label="Show catHOPia"><img src="assets/cathopia.png" alt="catHOPia pixel art game start screen" /></button>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next project">→</button>
+          </div>
+          <div class="carousel-detail" aria-live="polite"><div class="project-number" id="carousel-number"></div><h3 id="carousel-title"></h3><p class="project-type" id="carousel-type"></p><p id="carousel-description"></p><div class="tags" id="carousel-tags"></div></div>
+          <div class="carousel-footer"><div class="carousel-dots" aria-label="Choose project"></div><span class="carousel-count"><b>01</b> / 04</span></div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience section-shell reveal">
+        <p class="eyebrow">03 / EXPERIENCE &amp; INVOLVEMENT</p>
+        <div class="experience-grid"><div><h2>Building beyond<br /><em>the classroom.</em></h2><p>Learning through research projects, cloud communities, and hands-on development.</p></div><div class="timeline"><article><span>2026 — Present</span><div><h3>LeaSense PH</h3><p>Student Researcher · Full-stack Development &amp; Data Analytics</p></div></article><article><span>2025 — Present</span><div><h3>AWS Cloud Club PUP Manila</h3><p>Member · Cloud and developer community activities</p></div></article><article><span>2025 — Present</span><div><h3>Cisco NetConnect PUP Manila</h3><p>Cadet Member · Networking and technology community</p></div></article></div></div>
+      </section>
+
+      <section class="skills section-shell reveal"><p class="eyebrow">04 / TOOLKIT</p><div class="skills-head"><h2>My technical<br /><em>toolkit.</em></h2><p>Tools I use to turn an idea into a working product.</p></div><div class="skills-list"><span>Laravel</span><span>PHP</span><span>React</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span><span>Tailwind CSS</span><span>Chart.js</span><span>Git &amp; GitHub</span></div></section>
+
+      <section id="contact" class="contact section-shell reveal">
+        <p class="eyebrow">05 / GET IN TOUCH</p>
+        <div class="contact-layout">
+          <div class="contact-intro"><h2>Let’s make<br />something <em>useful.</em></h2><p>Open to entry-level opportunities, collaborations, and conversations around full-stack development or data analytics.</p></div>
+          <div class="contact-panel">
+            <a class="contact-card" href="mailto:stacey.ballares06@gmail.com"><span class="contact-icon">@</span><span><small>EMAIL</small><strong>stacey.ballares06@gmail.com</strong></span><b>01</b></a>
+            <a class="contact-card" href="https://github.com/staceydbb" target="_blank" rel="noreferrer"><span class="contact-icon">GH</span><span><small>GITHUB</small><strong>github.com/staceydbb</strong></span><b>02 ↗</b></a>
+            <div class="contact-card is-pending" aria-label="LinkedIn link to follow"><span class="contact-icon">in</span><span><small>LINKEDIN</small><strong>Link to follow</strong></span><b>03</b></div>
+            <a class="gmail-button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=stacey.ballares06@gmail.com&amp;su=Portfolio%20Inquiry" target="_blank" rel="noreferrer">Send me a message <span>↗</span></a>
+          </div>
+        </div>
+        <footer><span>© 2026 STACEY D. BALLARES</span><span>DESIGNED &amp; BUILT WITH INTENTION</span></footer>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

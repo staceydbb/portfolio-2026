@@ -1,0 +1,11 @@
+/* Floating browser-card interaction for the project showcase. */
+.project-card { transition: border-color .35s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.8,.2,1); will-change: transform; }
+.project-card:hover { border-color: rgba(243,166,202,.72); box-shadow: 0 25px 56px rgba(0,0,0,.44), 0 9px 30px rgba(243,166,202,.16); transform: translateY(-10px); }
+.project-media { overflow: hidden; }
+.project-media img, .small > img { transition: transform .7s cubic-bezier(.2,.8,.2,1), filter .45s ease; will-change: transform; }
+.featured-project:hover .project-media img { transform: scale(1.035) translateY(-5px); }
+.project-grid { perspective: 1100px; }
+.small { transform-origin: center bottom; }
+.small:hover { transform: translateY(-12px) rotateX(2deg) rotateY(-1deg); }
+.small:hover > img { transform: scale(1.06) translateY(-3px); filter: saturate(1.08); }
+@media (max-width:760px) { .project-card:hover, .small:hover { transform: none; } }
